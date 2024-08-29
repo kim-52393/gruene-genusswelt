@@ -1,0 +1,179 @@
+@import url('variablen.css');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* Schriften */
+html {
+    font-family: var(--body-text);
+    font-size: 125%;
+    line-height: 150%;
+}
+
+h1 {
+    font-family: var(--display-text);
+    font-size: 3.375rem;
+
+}
+
+h2 {
+    font-family: var(--display-text);
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-family: var(--subheadings);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: var(--display-text);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 120%;
+}
+
+/* Abstände */
+/* shortahnd hier nicht verwenden, da sonst die Werte überschrieben werden. */
+/* Vertikal */
+.py-1 {
+    /* 20px */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    /* 40px */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-3 {
+    /* 64px */
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Horizontal */
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-3 {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.px-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* Margin */
+.mt-1 {
+    margin-top: 1rem;
+}
+
+/* Schriftformatierung */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+/* Farben */
+.bg-dark {
+    background-color: var(--dark);
+    color: white;
+}
+
+/* Flex Anweisungen */
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Links (anchor tags) */
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.button {
+    height: 2.4rem;
+    max-width: 16rem;
+    padding: 0.4rem 1.8rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+/* Media Queries für Sektionen */
+@media screen and (max-width:576px) {
+    html {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}

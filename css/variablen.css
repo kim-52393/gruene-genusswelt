@@ -1,0 +1,14 @@
+/* cus-prop = custom-properties = Variablen*/
+
+:root {
+    --primary: #116156;
+    --secondary: #EDAA05;
+    --base: #FFF3E3;
+    --light: #E0E0E0;
+    --dark: #424242;
+    --display-text: 'libre Baskervile', 'Times New Roman', 'serif';
+    --subheadings: 'Lora', 'times New Roman', 'serif';
+    --body-text: 'Hind Madurai', 'Arial', 'Helvetica', 'sans-serif';
+    /* --functional-text: 'Hind Madurai', 'Arial', 'Helvetica', 'sans-serif'; */
+    --functional-text: var(--body-text)
+}

@@ -1,0 +1,56 @@
+
+
+/* Herobereich vom K*/
+/* @media screen and (width<=576px)  */
+/* header {
+        z-index: 100;
+
+
+    }
+
+    nav {
+        justify-content: center;
+        height: 10vh;
+    }
+
+    nav ul,
+    nav li {
+        font-size: 0.8rem;
+    }
+
+    nav a {
+        text-wrap: nowrap;
+    }
+
+    nav .icons {
+        gap: 0.5rem;
+
+    } */
+
+
+/* .hero {
+        background: url(../img/gg-hero-respponsiv.png) no-repeat;
+        width: 100%;
+        background-size: cover;
+        align-items: flex-end;
+    }
+
+    .cta {
+        filter: opacity(80%);
+         padding: 2.4rem 0.8rem;
+        width: auto;
+        margin: 0 auto;
+
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-container a {
+        width: 14rem;
+    } */
+
+/* ENDE Herobereich vom K*/
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Köstliche pflanzliche Gerichte für eine gesunde Ernährung und einen nachhaltigen Lebensstil.">
+    <meta name="keywords" content="rezepte, gesunde ernährung, kochen, nachhaltig, plantbased">
+    <meta name="author" content="Christine Hogg">
+    <link rel="icon" type="image/x-icon" href="img/gruene-genusswelt-logo.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <title>Grüne Genusswelt</title>
+</head>
+
+<body>
+    <header>
+        <nav class="flex px-2">
+            <div class="logo">
+                <img src="img/gruene-genusswelt-logo.png" alt="">
+            </div>
+            <ul class="list-items flex">
+                <li><a href="#rezepte-id">Rezepte</a></li>
+                <li><a href="#about-id">Über Uns</a></li>
+                <li> <a href="newsletter-id">Newsletter</a></li>
+                <li> <a href="contact-id">Kontakt</a></li>
+            </ul>
+            <div class="flex icons">
+                <a href=""> <img src="img/search.svg" alt=""></a>
+                <a href=""> <img src="img/heart.svg" alt=""></a>
+            </div>
+            <a href="javascript:void(0)" class="hamburger" onclick="openNav()"><img src="img/hamburger.svg" alt=""> </a>
+
+            <div id="myNav" class="overlay display-none py-2 px-2">
+
+                <a href="javascript:void(0)" class="closebtn " onclick="closeNav()"> <img src="img/x-lg.svg" alt="">
+                </a> <br> <br>
+                <div class="overlay-content flex">
+                    <a href="#rezepte-id">Rezepte</a>
+                    <a href="#about-id">Über Uns</a>
+                    <a href="#newsletter-id">Newsletter</a>
+                    <a href="#contact-id">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+
+
+        <!-- Hero Sektion -->
+        <section class="hero flex align-items-center">
+            <div class="cta flex px-3 py-3">
+                <div class="cta-text">
+                    <h1>Entdecke die Vielfalt der nachhaltigen Küche</h1>
+                    <p>Genieße köstliche pflanzliche Gerichte für eine gesunde Ernährung und einen nachhaltigen
+                        Lebensstil.</p>
+                </div>
+                <div class="flex buttons-container">
+                    <a href="#about" class="button btn-secondary">Mehr Erfahren</a>
+                    <a href="#neue-rezepte" class="button btn-primary">Rezepte Stöbern</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Neue Rezepte -->
+        <section class="neue-rezepte flex align-items-center py-4 " id="rezepte-id">
+            <h2>Neue Rezepte</h2>
+            <div class="card-container flex ">
+                <div class="card">
+                    <div>
+                        <img src="img/rezept-1.png" alt="">
+                        <h4>Quinoa-Power-Bowl mit geröstetem Gemüse</h4>
+                    </div>
+                    <a href="" class="button btn-primary">Zum Rezept <img src="img/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="img/rezept-2.png" alt="">
+                        <h4>Bunte Gemüsepfanne mit aromatischem Knoblauch-Dressing</h4>
+                    </div>
+                    <a href="" class="button btn-primary">Zum Rezept <img src="img/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="img/rezept-3.png" alt="">
+                        <h4>Vegane Lasagne mit cremiger Cashew-Bechamel</h4>
+                    </div>
+                    <a href="" class="button btn-primary">Zum Rezept <img src="img/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="img/rezept-4.png" alt="">
+                        <h4>Asiatische Bowl mit Teriyaki-Tofu und knackigem Gemüse</h4>
+                    </div>
+                    <a href="" class="button btn-primary">Zum Rezept <img src="img/arrow-right.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Über Uns Sektion -->
+        <section class="flex align-items-center about py-4 " id="about-id">
+            <div>
+                <img src="img/about-profile-pic.png" alt="Eine Frau die Gemuese schneidet." class="profile-image">
+            </div>
+            <div class="about-text">
+                <h2>Grüne Genusswelt</h2>
+                <h3>Leidenschaftliche Verfechter einer gesunden und nachhaltigen Ernährung</h3>
+                <p class="mt-1">Wir glauben fest daran, dass veganes Essen nicht nur gut für unseren Körper, sondern
+                    auch für unseren
+                    Planeten ist. Unsere Mission ist es, Menschen zu inspirieren und zu unterstützen, köstliche vegane
+                    Gerichte zu entdecken und in ihren Alltag zu integrieren.</p>
+                <p>Bei Grüne Genußwelt findest du eine vielfältige Auswahl an einfachen und kreativen veganen Rezepten,
+                    die sowohl erfahrene Köche als auch Anfänger ansprechen. Von herzhaften Hauptgerichten über
+                    erfrischende Salate bis hin zu verlockenden Desserts - unsere Rezepte sind voller Geschmack und
+                    Gesundheit.</p>
+                <p>Wir glauben, dass eine pflanzliche Ernährung nicht nur den Tieren, sondern auch der Umwelt
+                    zugutekommt. Indem wir tierische Produkte durch köstliche pflanzliche Alternativen ersetzen, tragen
+                    wir dazu bei, den ökologischen Fußabdruck zu verringern und eine nachhaltigere Zukunft für alle zu
+                    schaffen.</p>
+            </div>
+        </section>
+
+
+        <!-- Newslettter Sektion -->
+        <section class="flex justify-content-center text-align-center py-4 px-4 newsletter" id="newsletter-id">
+            <div>
+                <h2>Abonniere unseren Newsletter</h2>
+                <h3>Jeden Tag ein neues Rezept in deiner Inbox. Lecker, nachhaltig und vielfältig.</h3>
+            </div>
+            <form action="" method="post" class="flex newsletter-form text-align-center">
+                <div class="flex checkboxes justify-content-center">
+                    <div class="checkbox-1">
+                        <input type="checkbox" name="weekly" id="weekly">
+                        <label for="weekly">Wöchentliche News</label>
+                    </div>
+                    <div class="checkbox-2">
+                        <input type="checkbox" name="daily" id="daily">
+                        <label for="daily">Tägliche Rezepte</label>
+                    </div>
+                </div>
+                <div class="flex justify-content-center anmelden">
+                    <div class="flex email-adresse">
+                        <label for="email">E-Mail Adresse</label>
+                        <input type="email" name="email" id="email" placeholder="E-Mail-Adresse">
+                    </div>
+                    <button class="button btn-primary" type="submit">Anmelden</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark flex px-4 py-4" id="contact-id">
+        <div>
+            <h4>Kontakt</h4>
+            <p>Frankfurter Tor 93 <br>10243 Berlin <br><br>
+                <a href="tel:129038412">129038412</a><br>
+                <a href="mailto:info@grunergenuss.com">info@grunergenuss.com</a>
+            </p>
+        </div>
+        <div>
+            <h4>Rechtliches</h4>
+            <p>Impressum <br>
+                Datenschutz</p>
+        </div>
+        <div class="flex social-icons">
+            <a href="#"><img src="img/instagram.svg" alt="Instagram Logo"></a>
+            <a href="#"><img src="img/facebook.svg" alt="Facebook Logo"></a>
+            <a href="#"><img src="img/pinterest.svg" alt="Pinterest Logo"></a>
+        </div>
+    </footer>
+
+
+    <!--  für overlay An / Aus -->
+    <script>
+
+
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").classList.add("display-none");
+            document.getElementById("myNav").classList.remove("display-block");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+@import url(variablen.css);
+
+/* --------Navigation-------- */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0 1rem;
+
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+
+    height: 15vh;
+    margin: 0;
+
+}
+
+nav ul li:nth-child(2) {
+
+    text-wrap: nowrap;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #d7d7d74e;
+}
+
+.icons {
+    gap: 0.8rem;
+}
+
+/* ----------HERO----------- */
+/*  cover = der Container wird immer gefüllt so gut wie es geht, wenn wo zu viel ist wird abgeschnitten */
+/*  background-size ist im diesem Fall überflüssig, da im  background-size: cover; definiert ist */
+.hero {
+    background: url('../img/rezepte-hero.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-size: 100% auto; */
+    height: 85vh;
+}
+
+.cta {
+    background-color: var(--base);
+    width: 596px;
+    height: auto;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-left: 10vw;
+
+}
+
+.buttons-container {
+    gap: 0.8rem;
+}
+
+
+
+
+/* ----Neue Rezepte mit Grid ------ */
+.neue-rezepte {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid var(--light);
+    box-shadow: 8px 8px 24px #E0E0E080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1.2rem;
+
+}
+
+.card>div>img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+/* -------------About Section----------- */
+.about {
+    gap: 3.2rem;
+    background: var(--base);
+    flex-wrap: wrap;
+
+}
+
+/*  flex grow / flex shrink / flex basisgröße */
+.about div {
+    flex: 1 1 28rem;
+}
+
+/*  Bild soll gefüllt sein und immer 100% */
+.profile-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ------------Newsletter---------- */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.newletter {
+
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newsletter-form {
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.checkboxes {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    /* text-align: left; */
+}
+
+
+/* accent-color : Farbe im checkbox beim anklicken ändern */
+.checkbox-1,
+.checkbox-2 {
+    gap: .8rem;
+    accent-color: var(--light);
+}
+
+
+
+.anmelden {
+    gap: .8rem;
+    /* text-align: left; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.anmelden div {
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.anmelden input[type="email"] {
+    width: 24rem;
+    height: 2.4rem;
+}
+
+/* ----------- footer------ */
+footer {
+    gap: 2rem;
+
+
+}
+
+footer a {
+    color: white;
+}
+
+.social-icons {
+    gap: 2rem;
+}
+
+
+
+/*  overlay */
+
+
+.overlay {
+    /* height: 100; */
+    width: 50%;
+    background-color: #ffffffe8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.overlay-content {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.closebtn {
+    width: 32px;
+}
+
+/*  overlay An /Aus */
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+
+
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+/*  ------- Media querry  für Sectionen----- */
+
+/*  Für Tablet */
+@media screen and(width<=992px) {
+
+    /*  Hero Tablet */
+    .cta {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+
+
+
+/* für Smartfone */
+
+@media screen and (width<=576px) {
+
+    /* navi  Smartfone */
+    * {
+        padding: 0%;
+        margin: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        height: fit-content;
+
+    }
+
+    .list-items,
+    .icons {
+        display: none;
+    }
+
+
+    /* Hero  Smartfone */
+    .hero {
+        background: url("../img/gg-hero-respponsiv.png") no-repeat;
+        background-size: cover;
+        align-items: flex-end;
+    }
+
+    .cta {
+        width: auto;
+        filter: opacity(80%);
+        padding: 2.4rem 0.8rem;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .buttons-container a {
+        width: 14rem;
+    }
+
+    /*  NeuRezept Smartfone */
+
+    .card-container {
+        width: 90%;
+    }
+
+    .card {
+        text-align: center;
+        align-items: center;
+    }
+
+    /*  ABOUT- Smartfone */
+    .about {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    /*  Newsletter-Bereich */
+    .newsletter {
+        padding: 2rem;
+
+    }
+
+    .anmelden input[type="email"] {
+        width: 100%;
+
+    }
+
+    .newletter {}
+
+}

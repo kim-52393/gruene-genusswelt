@@ -1,0 +1,23 @@
+Script für GW - OVERLAY von Christine
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+        }
+ 
+        function closeNav() {
+            document.getElementById("myNav").classList.add("display-none");
+            document.getElementById("myNav").classList.remove("display-block");
+        }
+    </script>
+
+
+Script für GW - OVERLAY von Dirk/Chatgpt:
+
+function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.getElementById("myNav").classList.remove("display-none");
+        }
+
